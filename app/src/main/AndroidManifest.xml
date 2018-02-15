@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.amr1.atf_mysql_1">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -8,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme_No_Actionbar">
         <activity android:name=".Register_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,8 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login_Activity" />
-        <activity android:name=".Home_Activity" />
+        <activity android:name=".Login_Activity"
+            android:theme="@style/AppTheme_No_Actionbar"/>
+        <activity android:name=".Home_Activity"
+            android:theme="@style/AppTheme_No_Actionbar"/>
         <activity android:name=".Create_Post_Activity" />
         <activity android:name=".Display_Post_Activity"></activity>
     </application>
