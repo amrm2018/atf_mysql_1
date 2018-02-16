@@ -136,7 +136,6 @@
                     android:textStyle="bold"
                     android:textSize="18dp"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:layout_below="@id/imageView"
                     android:layout_marginTop="20dp"
                     android:layout_gravity="center"/>
 

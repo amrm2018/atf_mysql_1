@@ -34,7 +34,7 @@ public class Register_Activity extends AppCompatActivity {
 
         txtfname=findViewById(R.id.ed_fullname_reg);
         txtemail=findViewById(R.id.ed_email_reg);
-        txtpass=findViewById(R.id.ed_pass);
+        txtpass=findViewById(R.id.ed_pass_reg);
         txtcomfpass=findViewById(R.id.ed_comfpass_reg);
         txtphone=findViewById(R.id.ed_phone_reg);
         rdmale=findViewById(R.id.rdo_male);
@@ -51,8 +51,6 @@ public class Register_Activity extends AppCompatActivity {
         });//--------------end btn_save
 
     }
-
-
     //-------------------------------------------------------
     public void btn_go_home(View view) {
         startActivity(new Intent(getApplicationContext(),Home_Activity.class));
